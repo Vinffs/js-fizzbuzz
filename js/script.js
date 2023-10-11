@@ -1,22 +1,19 @@
-let i, result;
+for (let i = 1; i <= 100; i++) {
+  let box = document.createElement('div')
 
-for (i = 1; i <= 100; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    let divFizzBuzz = document.createElement('div')
-    divFizzBuzz.classList.add('numBox', 'bgFizzBuzz')
-    document.getElementById('fizzBuzzContainer').appendChild(divFizzBuzz);
+  if (i % 15 === 0) {
+    box.classList.add('bgFizzBuzz')
+    box.innerText = `FizzBuzz`;
   } else if (i % 3 === 0) {
-    let divFizz = document.createElement('div')
-    divFizz.classList.add('numBox', 'bgFizz')
-    document.getElementById('fizzBuzzContainer').appendChild(divFizz);
+    box.classList.add('bgFizz')
+    box.innerText = `Fizz`;
   } else if (i % 5 === 0) {
-    let divBuzz = document.createElement('div')
-    divBuzz.classList.add('numBox', 'bgBuzz')
-    document.getElementById('fizzBuzzContainer').appendChild(divBuzz);
+    box.classList.add('bgBuzz')
+    box.innerText = `Buzz`;
   } else {
-    let divNumber = document.createElement('div')
-    divNumber.classList.add('numBox', 'bgNumber')
-    document.getElementById('fizzBuzzContainer').appendChild(divNumber);
+    box.classList.add('bgNumber')
+    box.innerText = `${i}`;
   }
-
+  box.classList.add('numBox', 'd-flex', 'justify-content-center', 'align-items-center', 'fw-bold');
+  document.getElementById('fizzBuzzContainer').appendChild(box)
 }
