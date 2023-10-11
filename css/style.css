@@ -15,7 +15,6 @@ body{
   background-color: var(--my-bg-color);
 }
 .wrapper{
-  border: 1px solid white;
   width: 1200px;
   margin: 0 auto;
   margin-top: 20px;
@@ -23,7 +22,6 @@ body{
 #fizzBuzzContainer{
   width: 1000px;
   margin: 0 auto;
-  border: 1px solid white;
 }
 
 .numBox {
