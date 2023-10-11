@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --my-bg-color: #083B4C;
+  --my-bg-number: #1389B2;
+  --my-bg-fizz: #0CD6A1;
+  --my-bg-buzz: #FFD166;
+  --my-bg-fizzbuzz: #F0466F;
+}
+
+body{
+  background-color: var(--my-bg-color);
+}
+.wrapper{
+  border: 1px solid white;
+  width: 1000px;
+  margin: 0 auto;
+  height: 900px;
+  margin-top: 20px;
+}
+#fizzBuzzContainer{
+  width: 800px;
+  margin: 0 auto;
+  height: 800px;
+  border: 1px solid white;
+}
+
+.box {
+  width: 70px;
+  height: 70px;
+  border: 1px solid white;
+}
+.bgNumber{
+  background-color: var(--my-bg-number);
+}
+.bgFizz{
+  background-color: var(--my-bg-fizz);
+}
+.bgBuzz{
+  background-color: var(--my-bg-buzz);
+}
+.bgFizzBuzz{
+  background-color: var(--my-bg-fizzbuzz);
+}
