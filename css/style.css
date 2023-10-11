@@ -16,23 +16,22 @@ body{
 }
 .wrapper{
   border: 1px solid white;
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
-  height: 900px;
   margin-top: 20px;
 }
 #fizzBuzzContainer{
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
-  height: 800px;
   border: 1px solid white;
 }
 
-.box {
-  width: 70px;
-  height: 70px;
+.numBox {
+  width: 100px;
+  height: 100px;
   border: 1px solid white;
-}
+  margin: 20px;
+} 
 .bgNumber{
   background-color: var(--my-bg-number);
 }

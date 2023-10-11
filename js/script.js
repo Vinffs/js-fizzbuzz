@@ -1,13 +1,22 @@
-let i;
+let i, result;
 
 for (i = 1; i <= 100; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz")
+    let divFizzBuzz = document.createElement('div')
+    divFizzBuzz.classList.add('numBox', 'bgFizzBuzz')
+    document.getElementById('fizzBuzzContainer').appendChild(divFizzBuzz);
   } else if (i % 3 === 0) {
-    console.log("Fizz")
+    let divFizz = document.createElement('div')
+    divFizz.classList.add('numBox', 'bgFizz')
+    document.getElementById('fizzBuzzContainer').appendChild(divFizz);
   } else if (i % 5 === 0) {
-    console.log("Buzz");
+    let divBuzz = document.createElement('div')
+    divBuzz.classList.add('numBox', 'bgBuzz')
+    document.getElementById('fizzBuzzContainer').appendChild(divBuzz);
   } else {
-    console.log(i);
+    let divNumber = document.createElement('div')
+    divNumber.classList.add('numBox', 'bgNumber')
+    document.getElementById('fizzBuzzContainer').appendChild(divNumber);
   }
+
 }
