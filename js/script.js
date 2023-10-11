@@ -12,7 +12,7 @@ for (let i = 1; i <= 100; i++) {
     box.innerText = `Buzz`;
   } else {
     box.classList.add('bgNumber')
-    box.innerText = `${i}`;
+    box.innerHTML = `${i}`;
   }
   box.classList.add('numBox', 'd-flex', 'justify-content-center', 'align-items-center', 'fw-bold');
   document.getElementById('fizzBuzzContainer').appendChild(box)
